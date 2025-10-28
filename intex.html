@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodiesHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍕 FoodiesHub</h1>
+    <div class="cart-icon" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</div>
+  </header>
+
+  <main>
+    <section class="meals" id="meal-list"></section>
+
+    <aside class="cart" id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div class="cart-total">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Place Order</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<div class="cart-total">
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <button onclick="checkout()">Place Order</button>
+  <button onclick="clearCart()" style="margin-top: 10px; background-color: #ccc; color: #000;">Clear Cart</button>
+</div>
